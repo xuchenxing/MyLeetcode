@@ -32,6 +32,17 @@ class Solution:
         else:
             return self.climbStairs(n-2) + self.climbStairs(n-1)
 
+    def climbStairs1(self, n):
+        fbn1 = 0
+        fbn2 = 1
+        for i in range(1, n+1):
+            tmp = fbn1 + fbn2
+            fbn1 = fbn2
+            fbn2 = tmp
+
+        return fbn2
 
 
-print(Solution().climbStairs(35))
+
+
+print(Solution().climbStairs1(100))
