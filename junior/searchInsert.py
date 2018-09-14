@@ -38,6 +38,7 @@ class Solution:
         return len(nums)
 
 
+
 a = [1,2,3,5]
 b = 4
 print(Solution().searchInsert(a,b))
